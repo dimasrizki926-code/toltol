@@ -1,0 +1,253 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  line-height: 1.6px;
+  margin: 0;
+  padding: 10px;
+}
+.judul {
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.kiri {
+    width: 200px;
+    position: absolute;
+    top: 150px;
+    flex-shrink: 0;
+    left: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    padding: 15px;
+}
+.kiri ul {
+    flex-direction: column;
+    list-style: none;
+    background: linear-gradient(#dee20f, #d8ca00);
+    border-radius: 10px;
+    padding: 10px;
+}
+.kiri li {
+    margin: 8px 0;
+}
+.kiri a {
+    text-decoration: none;
+    color: black;
+    background-color: #ffcc00;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: block;
+    margin: 5px 0;
+    font-weight: bold;
+    text-align: center;
+}
+.kiri a:hover {
+    background-color: #e6b800;
+    color: #000;
+}
+.kanan {
+    padding: 10px;
+    width: 150px;
+    position: absolute;
+    flex-shrink: 0;
+    right: 30px;
+    border-radius: 10px;
+    top: 150px;
+    flex: 1;
+    min-width: 200px;
+    padding: 15px;
+}
+.kanan ul {
+    flex-direction: column;
+    list-style: none;
+    background: linear-gradient(#dee20f, #d8ca00);
+    border-radius: 10px;
+    padding: 10px;
+}
+.kanan li {
+    margin: 8px 0;
+}
+.kanan a {
+    text-decoration: none;
+    color: black;
+    background-color: #ffcc00;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: block;
+    margin: 8px 0;
+    font-weight: bold;
+    text-align: center;
+}
+.kanan a:hover {
+    background-color: #e6b800;
+    color: #000;
+}
+.content {
+  background-color: #fff;
+  text-align: center;
+  margin-left: 273px;
+  max-width: 700px;
+  width: 100px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex: 3;
+  min-width: 300px;
+}
+.content img {
+  width: 350px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+.deksripsi {
+  text-align: center;
+  margin-bottom: 20px;
+}
+nav {
+  background-color: #ffcc00;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: #222;
+}
+
+p, li, label {
+  color: #444;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: block;
+}
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+}
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+  font-size: 14px;
+  padding: 20px;
+}
+
+button {
+  background-color: #ffcc00;
+  font-style: italic;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+.profil-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .profil-card {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+    }
+    .profil-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 2px solid #ffcc00;
+    }
+    .profil-card h3 {
+      margin: 5px 0;
+      color: #222;
+    }
+    .profil-card p {
+      color: #555;
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .kiri, .kanan {
+    position: static;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .judul {
+    font-size: 20px;
+    padding: 8px 10px;
+  }
+
+  .content img {
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+    display: block;
+  }
+
+  form {
+    width: 100%;
+  }
+}
